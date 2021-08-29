@@ -12,3 +12,4 @@ do
     echo https://www.nowcoder.com/practice/$ID >> readme.md
     echo ''  >> readme.md
 done
+git add readme.md
