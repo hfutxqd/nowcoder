@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Solution {
 
-    static class ListNode {
+    public static class ListNode {
       int val;
       ListNode next = null;
     }
