@@ -3,9 +3,10 @@ package qa9fec6c46a684ad5a3abd4e365a9d362;
 import java.util.ArrayList;
 import java.util.List;
 
+// NC45
 public class Solution {
 
-    static class TreeNode {
+    public static class TreeNode {
         int val = 0;
         TreeNode left = null;
         TreeNode right = null;
