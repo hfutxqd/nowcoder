@@ -26,6 +26,10 @@ https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6
 
 https://www.nowcoder.com/practice/554aa508dd5d4fefbf0f86e5fe953abd
 
+判断链表中是否有环
+
+https://www.nowcoder.com/practice/650474f313294468a4ded3ce0f7898b9
+
 最小的K个数
 
 https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf
