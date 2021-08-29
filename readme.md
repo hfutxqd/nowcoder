@@ -22,6 +22,10 @@ https://www.nowcoder.com/practice/37548e94a270412c8b9fb85643c8ccc2
 
 https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6
 
+子数组的最大累加和问题
+
+https://www.nowcoder.com/practice/554aa508dd5d4fefbf0f86e5fe953abd
+
 最小的K个数
 
 https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf
