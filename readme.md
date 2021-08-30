@@ -76,6 +76,12 @@ https://www.nowcoder.com/practice/89865d4375634fc484f3a24b7fe65665
 
 [代码](src/q89865d4375634fc484f3a24b7fe65665)
 
+二叉树的最大深度
+
+https://www.nowcoder.com/practice/8a2b2bf6c19b4f23a9bdb9b233eefa73
+
+[代码](src/q8a2b2bf6c19b4f23a9bdb9b233eefa73)
+
 跳台阶
 
 https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4
