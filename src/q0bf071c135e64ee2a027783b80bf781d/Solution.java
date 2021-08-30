@@ -2,6 +2,11 @@ package q0bf071c135e64ee2a027783b80bf781d;
 
 import java.util.ArrayList;
 
+
+/**
+ * 二叉树的中序遍历
+ * 递归实现
+ */
 public class Solution {
 
     static class TreeNode {
