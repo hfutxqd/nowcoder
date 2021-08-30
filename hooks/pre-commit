@@ -11,5 +11,7 @@ do
     echo ''  >> readme.md
     echo https://www.nowcoder.com/practice/$ID >> readme.md
     echo ''  >> readme.md
+    echo "[代码](src/q${ID})" >> readme.md
+    echo ''  >> readme.md
 done
 git add readme.md
