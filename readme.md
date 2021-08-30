@@ -10,6 +10,12 @@ https://www.nowcoder.com/practice/0bf071c135e64ee2a027783b80bf781d
 
 [代码](src/q0bf071c135e64ee2a027783b80bf781d)
 
+岛屿数量
+
+https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e
+
+[代码](src/q0c9664d1554e466aa107d899418e814e)
+
 链表中环的入口结点
 
 https://www.nowcoder.com/practice/253d2c59ec3e4bc68da16833f79a38e4
