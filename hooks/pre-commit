@@ -2,16 +2,19 @@
 
 IDS=$(ls src/| cut -b 2-)
 
-rm -f readme.md
-
 for ID in $IDS
 do
-    title=$(curl https://www.nowcoder.com/practice/$ID 2>/dev/null | grep 'questionTitle'| cut -b 17-|rev| cut -b 3-|rev)
-    echo $title >> readme.md
-    echo ''  >> readme.md
-    echo https://www.nowcoder.com/practice/$ID >> readme.md
-    echo ''  >> readme.md
-    echo "[代码](src/q${ID})" >> readme.md
-    echo ''  >> readme.md
+    FILE=data/${ID}.json
+    if [ ! -f "$FILE" ]; then
+      title=$(curl https://www.nowcoder.com/practice/${ID} 2>/dev/null | grep 'questionTitle'| cut -b 17-|rev| cut -b 3-|rev)
+      echo $title >> readme.md
+      echo ''  >> readme.md
+      echo https://www.nowcoder.com/practice/$ID >> readme.md
+      echo ''  >> readme.md
+      echo "[代码](src/q${ID})" >> readme.md
+      echo ''  >> readme.md
+      curl https://www.nowcoder.com/practice/terminal/${ID} 2>/dev/null > data/${ID}.json
+    fi
 done
 git add readme.md
+git add data/*
