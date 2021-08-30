@@ -10,6 +10,12 @@ https://www.nowcoder.com/practice/0bf071c135e64ee2a027783b80bf781d
 
 [代码](src/q0bf071c135e64ee2a027783b80bf781d)
 
+链表中环的入口结点
+
+https://www.nowcoder.com/practice/253d2c59ec3e4bc68da16833f79a38e4
+
+[代码](src/q253d2c59ec3e4bc68da16833f79a38e4)
+
 01背包
 
 https://www.nowcoder.com/practice/2820ea076d144b30806e72de5e5d4bbf
