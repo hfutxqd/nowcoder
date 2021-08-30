@@ -118,6 +118,12 @@ https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf
 
 [代码](src/qe016ad9b7f0b45048c58a9f27ba618bf)
 
+设计LRU缓存结构
+
+https://www.nowcoder.com/practice/e3769a5f49894d49b871c09cadd13a61
+
+[代码](src/qe3769a5f49894d49b871c09cadd13a61)
+
 最长公共子串
 
 https://www.nowcoder.com/practice/f33f5adc55f444baa0e0ca87ad8a6aac
