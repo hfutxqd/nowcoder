@@ -11,9 +11,11 @@ public class Solution {
      * @return int整型
      */
     public int knapsack (int V, int n, int[][] vw) {
+        // dp矩阵代表 背包的体积 与 前i个物品 的最优解
         int[][] dp = new int[n][V];
 
         // V为0时，不论物品如何，最大重量为0
+        // dp[i][0]代表 背包的体积 为0时，最优解均为0
         for (int i = 0; i < n; i++) {
             dp[i][0] = 0;
         }
@@ -22,15 +24,17 @@ public class Solution {
         int v = vw[0][0];
         int w = vw[0][1];
         for (int i = 0; i < V; i++) {
-            if ( v <= i) { // 物品可以放进背包
+            // dp[0][i]代表体积为i时，前0个物体的最优解
+            if ( v <= i) { // 物品可以放进背包，则最优解为第0个物体的重量
                 dp[0][i] = w;
-            } else {
+            } else {  // 物品不可以放进背包，则最优解为0
                 dp[0][i] = 0;
             }
         }
+        // 递推公式
         // dp[i][j] = max of
-        // 1.  dp[i - 1][j]
-        // 2.  dp[i - 1][j - v] + w
+        // 1.第i个物品不放进背包： dp[i - 1][j]
+        // 2.第i个物品放进背包：  dp[i - 1][j - v] + w
         for (int i = 1; i < n; i++) { // i表示物品
             for (int j = 1; j < V; j++) { // j表示背包容量
                 v = vw[i][0];
