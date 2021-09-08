@@ -1,5 +1,6 @@
 package qd8b6b4358f774294a89de2a6ac4d9337;
 
+// 合并两个排序的链表
 public class Solution {
     static class ListNode {
         int val;
@@ -16,33 +17,19 @@ public class Solution {
         } else if (list2 == null) {
             return list1;
         }
-        ListNode root, tmp;
-        if (list1.val > list2.val) {
-            root = list2;
-            list2 = list2.next;
-        } else {
-            root = list1;
-            list1 = list1.next;
-        }
-        tmp = root;
-        while (true) {
-            if (list1 == null) {
-                root.next = list2;
-                break;
-            }
-            if (list2 == null) {
-                root.next = list1;
-                break;
-            }
-            if (list1.val > list2.val) {
-                root.next = new ListNode(list2.val);
-                list2 = list2.next;
-            } else {
-                root.next = new ListNode(list1.val);
+        ListNode vHead = new ListNode(-1);
+        ListNode cur = vHead;
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                cur.next = list1;
                 list1 = list1.next;
+            } else {
+                cur.next = list2;
+                list2 = list2.next;
             }
-            root = root.next;
+            cur = cur.next;
         }
-        return tmp;
+        cur.next = list1 == null ? list2 : list1;
+        return vHead.next;
     }
 }
