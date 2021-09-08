@@ -1,5 +1,6 @@
 package qf33f5adc55f444baa0e0ca87ad8a6aac;
 
+// 最长公共子串
 public class Solution {
     /**
      * longest common substring
@@ -9,22 +10,22 @@ public class Solution {
      */
     public String LCS (String str1, String str2) {
         // write code here
-        String s = str1.length() < str2.length() ? str1 : str2;
-        String b = str1.length() >= str2.length() ? str1 : str2;
+        String s = str1.length() < str2.length() ? str1 : str2; // 短串
+        String b = str1.length() >= str2.length() ? str1 : str2; // 长串
         int maxLength = 0;
         int pos = 0;
-        for (int l = 0, r = l; r < s.length();) {
-            int tmp = b.indexOf(s.substring(l, r + 1));
-            if (tmp >= 0) {
-                if (r - l + 1 > maxLength) {
+        for (int l = 0, r = l; r < s.length();) {  // 滑动窗口，初始l=0,r=0
+            int tmp = b.indexOf(s.substring(l, r + 1)); // 在 长串 中寻找 当前窗口子串
+            if (tmp >= 0) { // 找到了
+                if (r - l + 1 > maxLength) { // 长度 大于 之前的最大长度
                     maxLength = r - l + 1;
                     pos = tmp;
                 }
-                r++;
-            } else {
-                l++;
+                r++; // 右窗口指针右移
+            } else { // 没找到
+                l++; // 左窗口指针右移
             }
-            if (r >= s.length()) {
+            if (r >= s.length()) { // 右窗口指针大于短串的最大长度
                 break;
             }
         }
