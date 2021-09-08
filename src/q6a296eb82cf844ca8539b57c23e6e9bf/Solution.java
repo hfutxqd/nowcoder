@@ -3,7 +3,7 @@ package q6a296eb82cf844ca8539b57c23e6e9bf;
 import java.util.ArrayList;
 
 
-// NC119
+// NC119 最小的K个数
 // 选择排序解法
 public class Solution {
 

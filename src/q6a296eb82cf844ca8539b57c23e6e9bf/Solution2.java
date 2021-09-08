@@ -2,7 +2,7 @@ package q6a296eb82cf844ca8539b57c23e6e9bf;
 
 import java.util.*;
 
-// NC119
+// NC119 最小的K个数
 // 堆排序解法
 public class Solution2 {
 
@@ -21,6 +21,8 @@ public class Solution2 {
             }
             return result;
         }
+
+        // 最小堆
         Queue<Integer> heap = new PriorityQueue<>(k, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -28,9 +30,10 @@ public class Solution2 {
             }
         });
         for (int n: input) {
-            if(heap.isEmpty() || heap.size() < k){
+            if(heap.isEmpty() || heap.size() < k){ // 堆没有满
                 heap.offer(n);
-            } else if (n < heap.peek()) {
+            } else if (n < heap.peek()) { // 当前值 小于 堆顶(最小)
+                // 替换堆顶
                 heap.offer(n);
                 heap.poll();
             }
